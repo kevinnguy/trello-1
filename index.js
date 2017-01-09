@@ -30,7 +30,6 @@ if (isAlreadyRunning) {
 }
 
 function updateBadge(title) {
-	// ignore `Sindre messaged you` blinking
 	if (title.indexOf('Trello') === -1) {
 		return;
 	}
@@ -49,7 +48,6 @@ function updateBadge(title) {
 
 function createMainWindow() {
 	const lastWindowState = config.get('lastWindowState');
-	const isDarkMode = config.get('darkMode');
 
 	const win = new electron.BrowserWindow({
 		title: app.getName(),
@@ -64,11 +62,13 @@ function createMainWindow() {
 		alwaysOnTop: config.get('alwaysOnTop'),
 		titleBarStyle: 'hidden-inset',
 		autoHideMenuBar: true,
+		darkTheme: config.get('darkTheme'),
 		backgroundColor: '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
 			nodeIntegration: false,
-			plugins: true
+			plugins: true,
+			zoomFactor: 0.75
 		}
 	});
 
