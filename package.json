@@ -2,18 +2,16 @@
   "name": "trello",
   "productName": "Trello",
   "version": "1.0.0",
-  "description": "Unofficial Trello app on Electron",
+  "description": "Trello app on Electron",
   "license": "MIT",
-  "repository": "jdsimcoe/trello",
+  "repository": "kevinnguy/trello-electron",
   "author": {
-    "name": "Jonathan Simcoe",
-    "url": "jdsimcoe@gmail.com"
+    "name": "Kevin Nguy"
   },
   "scripts": {
     "test": "xo",
     "start": "electron .",
-    "build": "npm run build:macos && npm run build:linux && npm run build:windows",
-    "build:macos": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --prune --platform=darwin --arch=x64 --icon=static/Icon.icns --app-bundle-id=com.sindresorhus.caprine --sign='Developer ID Application: Sindre Sorhus (YG56YK5RN5)' --app-version=$npm_package_version && cd dist/Trello-darwin-x64 && zip -ryXq9 ../Trello-osx-${npm_package_version}.zip Trello.app"
+    "build": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --prune --platform=darwin --arch=x64 --icon=static/Icon.icns --app-version=$npm_package_version && cd dist/Trello-darwin-x64 && zip -ryXq9 ../Trello-osx-${npm_package_version}.zip Trello.app"
   },
   "dependencies": {
     "electron-config": "^0.2.1",
