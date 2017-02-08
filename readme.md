@@ -35,10 +35,5 @@ Built with [Electron](http://electron.atom.io).
 
 - Init: `$ npm install`
 - Run: `$ npm start`
-- Build macOS: `$ npm run build:macos`
-- Build all: `$ brew install wine` and `$ npm run build` *(macOS only)*
+- Build macOS: `$ npm run build`
 
-
-## License
-
-MIT © [Jonathan Simcoe](http://jdsimcoe.com)
