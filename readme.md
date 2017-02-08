@@ -27,19 +27,6 @@ Description            | Keys
 Toggle "Always on Top" | <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>t</kbd>
 
 
-## Install
-
-*macOS 10.9+ is supported.*
-
-### macOS
-
-#### Manually
-
-[**Download**](https://github.com/jdsimcoe/trello/releases/latest), unzip, and move `Caprine.app` to the `/Applications` directory.
-
----
-
-
 ## Dev
 
 Built with [Electron](http://electron.atom.io).
