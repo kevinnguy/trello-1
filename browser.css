@@ -5,11 +5,9 @@ html {
 /* bind the toolbar as the window's draggable region */
 #header {
 	-webkit-app-region: drag;
-	padding-left: 105px !important;
-	padding-bottom: 10px !important;
-	padding-top: 10px !important;
+  padding-left: 80px !important;
 }
 
 #header .header-btn {
-	cursor: pointer !important;
+  cursor: pointer !important;
 }
