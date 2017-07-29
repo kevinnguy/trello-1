@@ -68,7 +68,7 @@ function createMainWindow() {
 			preload: path.join(__dirname, 'browser.js'),
 			nodeIntegration: false,
 			plugins: true,
-			zoomFactor: config.get('zoomFactor')
+			zoomFactor: 0.75
 		}
 	});
 
